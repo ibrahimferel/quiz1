@@ -1,0 +1,191 @@
+/* Import font modern */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: linear-gradient(to bottom, #a3154b, #e85b6a);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Styling untuk navbar (menu navigasi) */
+.navbar {
+    padding: 20px 0;
+    top: 0px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 50%;
+    bottom: 0;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #fce6f0;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Wrapper About Me */
+.wrapper1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 20px;
+    flex-wrap: wrap;
+}
+
+/* Kotak About Me */
+.border {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    padding: 40px;
+    max-width: 650px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+}
+
+.border:hover {
+    transform: translateY(-10px);
+}
+
+.border h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.border p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Gambar profil */
+.gambar img {
+    width: 380px;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.gambar img:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+/* Section Titles */
+.texthobi h2{
+    font-size: 30px;
+    text-align: center;
+    margin: -45px 0 20px 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.textact h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 1px 0 20px 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+} 
+
+/* Section HOBI & ACTIVITIES */
+.borderhobi, .act {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.borderhobi > div, .act > div {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    padding: 30px;
+    max-width: 260px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.borderhobi > div:hover, .act > div:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.25);
+}
+
+.borderhobi img, .act img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.borderhobi img:hover, .act img:hover {
+    transform: scale(1.05);
+}
+
+.borderhobi h2, .act h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.borderhobi p, .act p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .wrapper1 {
+        flex-direction: column;
+    }
+    .border, .gambar img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .borderhobi > div, .act > div {
+        max-width: 90%;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

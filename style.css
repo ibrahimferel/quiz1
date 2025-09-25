@@ -1,0 +1,106 @@
+/* Import font modern dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Styling untuk keseluruhan halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8a063d, #d86968);
+    color: #333;
+}
+
+/* Styling untuk navbar (menu navigasi) */
+.navbar {
+    padding: 20px 0;
+    top: 0px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 50%;
+    bottom: 0;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #fce6f0;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Styling untuk kotak konten (border) */
+.border {
+    background: rgba(235, 39, 39, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    max-width: 570px;
+    margin: 10px -7px auto auto;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.border h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.border p {
+    color: #f9f9f9;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.wrapper {
+    background: rgba(148, 21, 21, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    max-width: 1000px;
+    margin: 120px auto;
+    max-height: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gambar img {
+    width: 100%;        /* biar ngikutin lebar kotak border */
+    max-width: 800px;   /* Batas maksimal lebar gambar */
+    margin-top: -485px;
+    margin-left: -702px;
+    height: auto;       /* proporsional */
+    transition: transform 0.3s ease;
+}
