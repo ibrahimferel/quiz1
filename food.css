@@ -1,9 +1,5 @@
-/* food.css */
-
-/* Import font modern */
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
-/* Reset dasar */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Body */
 body {
     background: linear-gradient(135deg, #8a063d, #d86968);
     color: #fff;
@@ -19,7 +14,6 @@ body {
     padding: 0px;
 }
 
-/* Styling untuk navbar (menu navigasi) */
 .navbar {
     padding: 20px 0;
     top: 0px;
@@ -63,7 +57,6 @@ body {
     left: 0;
 }
 
-/* Judul halaman */
 h1 {
     margin-top: 20px;
     text-align: center;
@@ -75,7 +68,6 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
-/* Kotak makanan */
 .food1, .food2, .food3 {
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid rgba(255, 255, 255, 0.3);
@@ -95,7 +87,6 @@ h1 {
     box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
 
-/* Gambar makanan */
 .food1 img, .food2 img, .food3 img {
     max-width: 300px;
     width: 100%;
@@ -108,7 +99,6 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Teks makanan */
 .katakata1, .katakata2, .katakata3 {
     flex: 1;
 }
@@ -124,7 +114,6 @@ h1 {
     color: #ffe6eb;
 }
 
-/* Responsif */
 @media (max-width: 768px) {
     .food1, .food2, .food3 {
         flex-direction: column;
